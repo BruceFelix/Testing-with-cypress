@@ -21,6 +21,10 @@ describe('Website Access Test', function () {
       // Create new survey
       cy.wait(5000)
       cy.get('.css-13dzu20 > :nth-child(1) > .chakra-button').click()
+
+      // Filling out survey information
+      cy.wait(8000)
+      cy.get('#field-\:rr\:').type("Cypress survey")
     })
   })
   
